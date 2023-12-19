@@ -18,6 +18,7 @@ body{
     border: 2px solid #000034;
     border-radius:10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .Business_card:hover{
@@ -75,4 +76,33 @@ body{
     margin-right:10px;
     text-decoration:none;
     color: cornflowerblue;
+}
+
+.skill_card{
+    top:48px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    width:100%;
+    backdrop-filter: blur(40px);
+    height:0%;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+}
+
+.skill_title{
+    margin-left:30px;
+    font-size:28px;
+    margin-top:70px;
+    font-weight:bold;
+}
+.skill_card ul{
+    margin-left:30px;
+}
+
+.skill_card li{
+    margin-bottom:10px;
+}
+
+.Business_card:hover .skill_card{
+    height: 100%;
 }
